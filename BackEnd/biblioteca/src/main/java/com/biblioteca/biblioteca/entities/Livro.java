@@ -1,4 +1,4 @@
-package main.java.com.biblioteca.biblioteca.entities;
+package com.biblioteca.biblioteca.entities;
 
 import java.time.LocalDate;
 
@@ -20,9 +20,9 @@ public class Livro {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
     @ManyToOne
+    Usuario user;
 
     String titulo;
-    Usuario user;
     int disponivel;
     LocalDate data;
 }
